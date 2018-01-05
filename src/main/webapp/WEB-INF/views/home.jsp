@@ -10,7 +10,7 @@
 <meta name="language" content="pl" />
 <meta name="author" content="Adrian Szromba" />
 
-<title>teamon</title>
+<title>teamon.pl</title>
 <meta name="description" content="Elektroniczny dziennik - obserwuj postępy i rozwój swoich uczniów. Twórz rankingi i porównuj" />
 <meta name="keywords" content="dziennik elektroniczny, ranking, zestawienia, sport, rozwój, analiza" />
 <link href="resources/css/style.css" rel="stylesheet" type="text/css"/>
@@ -20,9 +20,8 @@
 		<div id="container">
 			<%@ include file="jspf/header.jspf"%>
 			<%@ include file="jspf/main_menu.jspf"%>
-			<div id="footer">
-				<%@ include file="jspf/footer.jspf"%>
-			</div>
+			<%@ include file="jspf/content.jspf"%>
+			<%@ include file="jspf/footer.jspf"%>
 		</div>
 	</div>
 </body>

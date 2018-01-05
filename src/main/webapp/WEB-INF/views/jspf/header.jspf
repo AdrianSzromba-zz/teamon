@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="resources/css/style.css">
 
 <div class="header">
-	<img alt="logo" src="resources/images/Galacticrepublic_logo.png" height="150"/>
-	<p class=header-text>Elektroniczny dziennik dla trenerów</p>
+	<img class="logo" alt="logo" src="resources/images/Galacticrepublic_logo.png" height="150"/>
+	<p class=header-text>Elektroniczny asystent trenera</p>
 </div>
 

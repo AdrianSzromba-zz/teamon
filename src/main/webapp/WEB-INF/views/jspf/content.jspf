@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<link rel="stylesheet" href="resources/css/style.css">
+<div class="content">
+	<p>Lorem ipsum dolor sit amet magna. Etiam tincidunt lorem.
+		Maecenas eget accumsan sed, aliquam risus at nulla. Maecenas nec
+		tortor in nunc. Duis luctus nec, pharetra sem, accumsan interdum.
+		Suspendisse rhoncus eu, ornare in, mauris. Nullam aliquet, dui
+		convallis diam elit, gravida eros viverra justo. Donec porttitor
+		ullamcorper, augue eget sapien. Aliquam erat sed ante eu ipsum
+		eleifend ac, mattis eros. Vestibulum scelerisque. Duis nonummy
+		sagittis. Nullam sit amet eleifend nibh, fringilla faucibus, tortor
+		justo quis justo. Pellentesque laoreet iaculis mi. Donec eleifend ut,
+		condimentum odio et magnis dis parturient montes, nascetur ridiculus
+		mus. Fusce nulla. Phasellus vitae sapien et.</p>
+
+	<p>Donec nonummy sagittis. Vestibulum elit viverra nunc. Nulla
+		varius, nisl auctor metus. Maecenas nunc. Vivamus arcu quis metus.
+		Curabitur lacinia eros quis ante. Proin at urna dapibus risus nec
+		libero. Integer adipiscing. Nam interdum elementum. Aenean feugiat in,
+		dolor. Donec mauris tincidunt congue. Proin id nonummy sed, fermentum
+		facilisis. Fusce ligula. Cras faucibus erat. In hac habitasse platea
+		dictumst. Suspendisse eleifend purus laoreet urna. Sed diam eros, sit
+		amet leo. Donec magna nec augue. Morbi a velit nulla id dui. In ornare
+		quam. Fusce tempor et, felis. Etiam at orci massa, nonummy condimentum
+		justo quis tortor. Proin quis velit. Suspendisse.</p>
+
+	<p>Integer a venenatis convallis diam vitae libero. Integer
+		condimentum nec, aliquam tortor. Maecenas gravida, nisl eros, id
+		rutrum et, commodo magna, at sollicitudin arcu. Cras lorem urna tellus
+		enim, ac massa. Donec libero ac pede sed est et ultrices bibendum,
+		urna et justo. Aliquam sed felis. Donec enim non purus. Aliquam erat
+		ac eros eros eros et pede eget volutpat a, euismod elit. In vitae
+		facilisis libero. Curabitur volutpat eu, ullamcorper pede turpis ut
+		porta lorem, id felis. Aenean libero. Integer metus nunc, accumsan et,
+		felis. Pellentesque quam at elit purus, pharetra eget, cursus vitae,
+		imperdiet dignissim, libero hendrerit sollicitudin.</p>
+
+	<p>Vestibulum leo. Cras vitae fermentum in, odio. Ut id purus sem
+		eget magna. Cum sociis natoque penatibus et wisi dui convallis
+		posuere. Quisque at justo. Pellentesque nunc lacus, congue eleifend.
+		Vestibulum ante ipsum wisi, id dui. In vitae est a leo at erat
+		volutpat. Nullam fermentum nisl a quam in aliquam at, elit.
+		Pellentesque habitant morbi tristique interdum. Donec porttitor risus.
+		Suspendisse potenti. Quisque sed est. Pellentesque malesuada euismod,
+		nulla ac augue. Sed aliquet elit, dictum orci. Ut sodales, dictum
+		velit, scelerisque odio a auctor consectetuer. Sed faucibus, convallis
+		diam ut justo dolor, luctus et magnis dis parturient montes
+, nascetur.
+
+	</div>
+
