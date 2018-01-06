@@ -30,7 +30,7 @@ import org.springframework.web.servlet.view.JstlView;
 								"pl.teamon.manager.entity" })
 @EnableWebMvc
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages= {"pl.coderslab.warsztat6.repository"})
+@EnableJpaRepositories(basePackages= {"pl.teamon.manager.repository"})
 public class AppConfig implements WebMvcConfigurer {
 
 	@Bean
