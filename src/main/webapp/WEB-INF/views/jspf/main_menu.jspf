@@ -8,6 +8,7 @@
 	<c:choose>
 		<c:when test="${sessionScope.user==null}">
 			<ul class="nav">
+				<li><a href="./">Menu główne</a></li>
 				<li><a href="login">Logowanie</a></li>
 				<li><a href="register">Rejestracja</a></li>
 			</ul>
