@@ -16,7 +16,6 @@
 			<%@ include file="jspf/main_menu.jspf"%>
 			<div class="form-style-8">
 				<h2>Rejestracja</h2>
-				<p class="error">${msg}</p>
 				<form:form method="post" modelAttribute="user">
 					<p>
 						<!--User Name:-->
@@ -38,10 +37,10 @@
 						<form:password path="password" placeholder="Hasło" />
 						<form:errors path="password" />
 					</p>
+					<p class="error">${msg}</p>
 					<input type="submit" value="Zatwierdź" />
 				</form:form>
 			</div>
-
 			<%@ include file="jspf/footer.jspf"%>
 		</div>
 	</div>
