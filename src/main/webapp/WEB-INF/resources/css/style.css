@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  font: 16px/28px "Source Sans Pro", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+  color: #3b3b3b;
+}
+
+a {
+    text-decoration: none;
+    color: #3b3b3b;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input,
+textarea,
+select {
+    font: 12px/15px "Source Sans Pro", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    vertical-align: middle;
+    color: #aaa;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+form,
+fieldset {
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
+
+#container {
+	width: 1004px;
+	margin: 0 auto;
+}
+
+/*------ Header ------*/
+.header {
+	padding: 30px;
+	position: relative;
+	margin-top: 10px;
+    font-size: 24px;
+}
+
+/*------ Navigation ------*/
+.nav {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.nav a {
+    color: #000;
+    display: block;
+    text-align: center;
+    padding: 12px 24px;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav li {
+    margin: -1px 0 0 0;
+    padding: 0;
+    display: inline-block;
+    border-top: 1px solid #ccc;
+}
+
+.nav li h1 {
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.nav .nav-selected {
+    border-top-color: #000;
+    font-weight: bold;
+}
+
+.nav li:hover {
+    border-top: 1px solid #000;
+}
+
+.adblock {
+    margin: 0 auto 18px;
+    text-align: center;
+}
+
+/*------ Other ------*/
+
+.error {
+	color:red;
+}
+
+.content p{
+	width: 85%;
+}
+
+.content p{
+	text-align: justify;
+}
+
+/*------ Footer ------*/
+#footer {
+    margin-top: 50px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    color: #7a7a7a;
+    padding: 20px 0 20px;
+    text-align: center;
+}
+
+#footer a {
+    color: #7a7a7a;
+}
+
+/* Form */
+
+.form-style-8{
+    width: 500px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.form-style-8 h2{
+    background: #4D4D4D;
+    text-transform: uppercase;
+    color: #797979;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+.form-style-8 input[type="text"],
+.form-style-8 input[type="date"],
+.form-style-8 input[type="datetime"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 input[type="search"],
+.form-style-8 input[type="time"],
+.form-style-8 input[type="url"],
+.form-style-8 input[type="password"],
+.form-style-8 textarea,
+.form-style-8 select 
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    font: 16px/28px "Source Sans Pro", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
+    height: 45px;
+}
+.form-style-8 textarea{
+    resize:none;
+    overflow: hidden;
+}
+.form-style-8 input[type="button"], 
+.form-style-8 input[type="submit"]{
+    -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    background-color: #2CBBBB;
+    border: 1px solid #27A0A0;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font: 16px/28px "Source Sans Pro", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 8px 18px;
+    text-decoration: none;
+
