@@ -18,7 +18,7 @@
 			<c:choose>
 
 				<c:when test="${sessionScope.user == null}">
-					Musisz być zalogowany aby mieć dostęp do tej treści
+					Musisz być zalogowany aby mieć dostęp do tej treści 
 				</c:when>
 
 				<c:otherwise>
@@ -37,7 +37,7 @@
 							E-mail: ${user.email }
 						</p>
 
-						<a class="box" href="./myaccount/edit">Edytuj</a> | <a class="box" href="./myaccount/delete">Usuń</a>
+						<a class="box" href="./myaccount/editUser">Edytuj</a> | <a class="box" href="./myaccount/delete">Usuń</a>
 					</div>
 				</c:otherwise>
 			</c:choose>
