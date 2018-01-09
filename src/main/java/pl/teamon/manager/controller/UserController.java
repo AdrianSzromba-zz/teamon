@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -71,6 +72,57 @@ public class UserController {
 		}
 		m.addAttribute("msg", "Wprowadź poprawne dane");
 		return "login";
+	}
+	
+	//------------------------------------- MYACCOUNT -------------------------------------
+	
+		@GetMapping("/myaccount")
+		public String myaccount(Model m) {
+			HttpSession s = SessionManager.session();
+			User u = (User) s.getAttribute("user");
+			m.addAttribute("user", u);
+			return "myaccount";
+		}
+	
+	//------------------------------------- CHANGE -------------------------------------
+	
+//	@GetMapping("/myaccount/edit")
+//	public String changeUser(Model m) {
+//		HttpSession s = SessionManager.session();
+//		User u = (User) s.getAttribute("user");
+//		m.addAttribute("user", u);
+//		return "editUser";
+//	}
+//	
+//	@PostMapping("/change")
+//	public String changePost(@Valid @ModelAttribute User user, BindingResult bindingResult) {
+//		if (bindingResult.hasErrors()) {
+//			return "redirect:/register";
+//		}
+//		HttpSession s = SessionManager.session();
+//		User u = (User) s.getAttribute("user");
+//		user.setId(u.getId());
+//		this.userRepository.save(user);
+//		return "redirect:/";
+//	}
+		
+	//------------------------------------- DELETE -------------------------------------
+
+	@GetMapping("/myaccount/delete")
+	public String delete(Model m) {
+		HttpSession s = SessionManager.session();
+		User u = (User) s.getAttribute("user");
+		m.addAttribute("user", u);
+		return "deleteUser";
+	}
+	
+	@GetMapping("/myaccount/delete/true")
+	public String deletePost() {
+		HttpSession s = SessionManager.session();
+		User u = (User) s.getAttribute("user");
+		s.invalidate();
+		this.userRepository.delete(u);
+		return "redirect:/";
 	}
 	
 	//------------------------------------- LOGOUT -------------------------------------
