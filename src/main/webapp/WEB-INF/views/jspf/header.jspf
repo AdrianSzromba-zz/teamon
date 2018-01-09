@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<link rel="stylesheet" href="resources/css/style.css">
+<link rel="stylesheet" href="/manager/resources/css/style.css">
 
 <div class="header">
-	<img class="logo" alt="logo" src="resources/images/logo.png" height="150"/>
+	<img class="logo" alt="logo" src="/manager/resources/images/logo.png" height="150"/>
 	<p class=header-text>Elektroniczny asystent trenera</p>
 </div>
 

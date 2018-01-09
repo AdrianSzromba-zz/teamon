@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<link rel="stylesheet" href="resources/css/style.css">
+<link rel="stylesheet" href="/manager/resources/css/style.css">
 <div class="content">
 	<p>Lorem ipsum dolor sit amet magna. Etiam tincidunt lorem.
 		Maecenas eget accumsan sed, aliquam risus at nulla. Maecenas nec

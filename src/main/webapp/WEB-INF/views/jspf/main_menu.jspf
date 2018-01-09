@@ -8,18 +8,19 @@
 	<c:choose>
 		<c:when test="${sessionScope.user==null}">
 			<ul class="nav">
-				<li><a href="./">Menu główne</a></li>
-				<li><a href="login">Logowanie</a></li>
-				<li><a href="register">Rejestracja</a></li>
+				<li><a href="/manager">Menu główne</a></li>
+				<li><a href="/manager/login">Logowanie</a></li>
+				<li><a href="/manager/register">Rejestracja</a></li>
 			</ul>
 		</c:when>
 		<c:otherwise>
 			<ul class="nav">
-				<li><a href="">Menu główne</a></li>
+				<li><a href="/manager">Menu główne</a></li>
 				<li><a href="">Członkowie</a></li>
 				<li><a href="">Grupy</a></li>
 				<li><a href="">Porównywarka</a></li>
-				<li><a href="logout">Wyloguj</a></li>
+				<li><a href="/manager/myaccount">Moje konto</a></li>
+				<li><a href="/manager/logout">Wyloguj</a></li>
 			</ul>
 		</c:otherwise>
 	</c:choose>
