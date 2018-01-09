@@ -3,6 +3,7 @@ package pl.teamon.manager.controller;
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
+import javax.transaction.Transactional;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,6 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -86,25 +86,26 @@ public class UserController {
 	
 	//------------------------------------- CHANGE -------------------------------------
 	
-//	@GetMapping("/myaccount/edit")
-//	public String changeUser(Model m) {
-//		HttpSession s = SessionManager.session();
-//		User u = (User) s.getAttribute("user");
-//		m.addAttribute("user", u);
-//		return "editUser";
-//	}
-//	
-//	@PostMapping("/change")
-//	public String changePost(@Valid @ModelAttribute User user, BindingResult bindingResult) {
-//		if (bindingResult.hasErrors()) {
-//			return "redirect:/register";
-//		}
-//		HttpSession s = SessionManager.session();
-//		User u = (User) s.getAttribute("user");
-//		user.setId(u.getId());
-//		this.userRepository.save(user);
-//		return "redirect:/";
-//	}
+	@GetMapping("/myaccount/editUser")
+	public String changeUser(Model m) {
+		HttpSession s = SessionManager.session();
+		User u = (User) s.getAttribute("user");
+		m.addAttribute("user", u);
+		return "editUser";
+	}
+
+	@PostMapping("/myaccount/editUser")
+	@Transactional
+	public String changePost(Model m, @Valid @ModelAttribute User user, BindingResult bindingResult) {
+		if (bindingResult.hasErrors()) {
+			return "redirect:/myaccount/editUser";
+		}
+		HttpSession s = SessionManager.session();
+		User u = (User) s.getAttribute("user");
+		user.setId(u.getId());
+		this.userRepository.save(user);
+		return "redirect:/";
+	}
 		
 	//------------------------------------- DELETE -------------------------------------
 
