@@ -222,3 +222,8 @@ fieldset {
     padding: 20px;
     margin: -30px -30px 30px -30px;
 }
+
+.left {
+	display: inline-block;
+	width: 100;
+}

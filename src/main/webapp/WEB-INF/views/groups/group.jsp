@@ -7,7 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <title>teamon.pl</title>
-<link href="/manager/resources/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/manager/resources/css/style.css" rel="stylesheet"
+	type="text/css" />
 </head>
 <body>
 	<div align="center">
@@ -20,6 +21,14 @@
 					Musisz być zalogowany aby mieć dostęp do tej treści 
 				</c:when>
 				<c:otherwise>
+					<div class="form-style-8">
+						<h2>Dostępne grupy:</h2>
+						<a class="box" href="group/add" >Dodaj</a>
+						<c:forEach items="${allGroups}" var="group">
+							<div class="left">${group.groupName}</div>
+							<div class="left"><a href="">szczegóły</a> | <a href="">usuń</a></div>
+						</c:forEach>
+					</div>
 				</c:otherwise>
 			</c:choose>
 			<%@ include file="../jspf/footer.jspf"%>
