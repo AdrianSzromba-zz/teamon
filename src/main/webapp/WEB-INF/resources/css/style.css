@@ -17,10 +17,10 @@ a:hover {
 }
 
 a.box {
-    background-color: #2CBBBB;
+    background-color: #F0EE41;
     border: 1px solid #27A0A0;
     display: inline-block;
-    color: #FFFFFF;
+    color: #2a2f18;
     padding: 8px 18px;
     margin: 2px;
 }
@@ -30,7 +30,7 @@ textarea,
 select {
     font: 12px/15px "Source Sans Pro", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
     vertical-align: middle;
-    color: #aaa;
+    color: #404040;
 }
 
 input[type="submit"]:hover {
@@ -151,7 +151,7 @@ fieldset {
 .form-style-8 h2{
     background: #4D4D4D;
     text-transform: uppercase;
-    color: #797979;
+    color: #b0dd46;
     font-size: 18px;
     font-weight: 100;
     padding: 20px;
@@ -192,11 +192,11 @@ fieldset {
     -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
     -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
     box-shadow: inset 0px 1px 0px 0px #45D6D6;
-    background-color: #2CBBBB;
+    background-color: #F0EE41;
     border: 1px solid #27A0A0;
     display: inline-block;
     cursor: pointer;
-    color: #FFFFFF;
+    color: #2a2f18;
     font: 16px/28px "Source Sans Pro", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 8px 18px;
     text-decoration: none;
