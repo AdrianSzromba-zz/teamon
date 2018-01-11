@@ -16,9 +16,9 @@
 		<c:otherwise>
 			<ul class="nav">
 				<li><a href="/manager">Menu główne</a></li>
-				<li><a href="">Członkowie</a></li>
+				<li><a href="/manager/motivate">Motywacja</a></li>
 				<li><a href="/manager/group">Grupy</a></li>
-				<li><a href="">Porównywarka</a></li>
+				<li><a href="/manager/trening">Zajęcia</a></li>
 				<li><a href="/manager/myaccount">Moje konto</a></li>
 				<li><a href="/manager/logout">Wyloguj</a></li>
 			</ul>
