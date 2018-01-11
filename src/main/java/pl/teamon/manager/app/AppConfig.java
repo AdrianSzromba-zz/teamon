@@ -24,6 +24,9 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+import pl.teamon.manager.converter.UserConverter;
+import pl.teamon.manager.converter.UserGroupConverter;
+
 @Configuration
 @ComponentScan(basePackages = { "pl.teamon.manager.bean", 
 								"pl.teamon.manager.controller",
@@ -68,13 +71,20 @@ public class AppConfig implements WebMvcConfigurer {
 
 	@Override
 	public void addFormatters(FormatterRegistry registry) {
+		registry.addConverter(getUserConverter());
+		registry.addConverter(getUserGroupConverter());
 	}
 
-//	@Bean
-//	public AuthorConverter authorConverter() {
-//		return new AuthorConverter();
-//	}
-	
+	@Bean
+	public UserConverter getUserConverter() {
+		return new UserConverter();
+	}
+
+	@Bean
+	public UserGroupConverter getUserGroupConverter() {
+		return new UserGroupConverter();
+	}
+
 	@Bean(name = "localeResolver")
 	public LocaleContextResolver getLocaleContextResolver() {
 		SessionLocaleResolver localeResolver = new SessionLocaleResolver();
