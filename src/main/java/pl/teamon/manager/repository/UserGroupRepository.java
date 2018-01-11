@@ -9,4 +9,6 @@ import pl.teamon.manager.entity.UserGroup;
 public interface UserGroupRepository extends JpaRepository<UserGroup, Long>{
 
 	List<UserGroup> findAllByOrderByIdAsc();
+	UserGroup findOneById(Long id);
+	UserGroup findById(long parselong);
 }
