@@ -18,7 +18,7 @@
 				<h2>Dodaj nowe wydarzenie</h2>
 				<form:form method="post" modelAttribute="trening">
 					<p>
-						<form:input path="date" type="datetime" value="${date}" />
+						<form:input path="date" type="date" />
 						<form:errors path="date" />
 					</p>
 					<p>
