@@ -11,6 +11,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -19,6 +20,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Table(name = "trening")
@@ -30,6 +32,7 @@ public class Trening {
 	private long id;
 	
 	@Future
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date date;
 	
 	@NotEmpty
@@ -39,12 +42,12 @@ public class Trening {
 	@Size(min = 15, max = 200)
 	private String description;
 	
-	@OneToOne(cascade =CascadeType.ALL, fetch = FetchType.EAGER)
+	@ManyToOne(cascade =CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "id_usergroup")
 	private UserGroup usergroup;
 	
 	@OneToMany (cascade =CascadeType.ALL, fetch = FetchType.EAGER)
-	@JoinColumn(name="id_user")
+	@JoinColumn(name="id_trening")
 	private List <User> user = new ArrayList<>();
 
 	public String getName() {

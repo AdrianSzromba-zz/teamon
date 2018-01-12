@@ -11,6 +11,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -30,6 +31,9 @@ public class UserGroup {
 	@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private List<User> user = new ArrayList<>();
 
+	@OneToMany(mappedBy="usergroup")
+	private List<Trening> trening = new ArrayList<>();
+	
 	public long getId() {
 		return id;
 	}
